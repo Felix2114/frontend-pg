@@ -65,10 +65,10 @@ function getUsers() {
 
 
 function updateUser(id) {
-     var myName = $('#name_').val();
-    var myEmail = $('#email_').val();
-    var myAge = $('#age_').val();
-    var myComments = $('#comments_').val();
+     var myName = $('#name_' + id).val();
+    var myEmail = $('#email_'+ id).val();
+    var myAge = $('#age_'+ id).val();
+    var myComments = $('#comments_'+ id).val();
 
     var myuser = {
         name: myName,
